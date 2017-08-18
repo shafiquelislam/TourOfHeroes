@@ -2,7 +2,7 @@
   <md-toolbar color="primary">
     <span><md-icon>mood</md-icon></span>
 
-    <span>Yay, Material in Angular 2!</span>
+    <span>{{title}}</span>
 
     <button md-icon-button [md-menu-trigger-for]="menu">
       <md-icon>more_vert</md-icon>
@@ -17,7 +17,7 @@
     <button md-button>All</button>
     <button md-raised-button>Of</button>
     <button md-raised-button color="primary">The</button>
-    <button md-raised-button color="accent">Buttons</button>
+    <button md-raised-button color="accent">Heroes</button>
   </md-card>
 
   <span class="done">
@@ -26,7 +26,6 @@
     </button>
   </span>
 </div>
-<h1>{{title}}</h1>
 <h2>My Heroes</h2>
 <ul class='heroes'>
   <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
