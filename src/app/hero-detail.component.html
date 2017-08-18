@@ -2,7 +2,8 @@
   <h2>{{hero.name}} details!</h2>
   <div><label>id: </label>{{hero.id}}</div>
   <div>
-    <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name"/>
+    <md-input-container>
+      <input mdInput [(ngModel)]="hero.name" placeholder="Name:">
+    </md-input-container>
   </div>
 </div>
